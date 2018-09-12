@@ -1,0 +1,142 @@
+/* Tiny reset */
+body,html{
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin-top: 0px;
+  
+}
+
+
+
+.wrapper {
+  
+  height: 100vh;
+
+  overflow-x: hidden;
+  
+  overflow-y: auto;
+  
+  perspective: 2px;
+
+  font-family: "Luna";
+}
+
+.section {
+  
+  position: relative;
+  
+  height: 100vh;
+  
+   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 5px #000;
+}
+
+.parallax::after {
+  
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  
+  transform: translateZ(-1px) scale(1.5);
+  
+  background-size: 100%;
+  
+  z-index: -1;
+
+  height: 700px;
+}
+
+
+.static {
+  background: #00acc1;
+  width: 100%;
+  height: 350px;
+}
+
+.static h1{
+  font-family: "Consolas";
+  margin-top: 50px;
+  font-size: 50px;
+  margin-left: 0px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-family: "Consolas";
+    font-size: 23px;
+    
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 20px;
+    margin-left: 200px;
+    padding-top: 130px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row1{
+  margin-left: 0px;
+  margin-bottom: 20px;
+  padding: 270px 80px 0;
+  padding-right: 0px;
+}
+
+
+.bg1::after {
+  background-image: url('img7.jpg');
+}
+
+.bg1{
+  font-family: "Consolas";
+  text-align: center;
+  font-size: 40px;
+}
+
+.bg2::after {
+  background-image: url('img11.jpg');
+
+}
+
+.bg2 p{
+  font-size: 50px;
+  font-family: "Consolas";
+  text-align: center;
+  margin-left: 10px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #909;
+}
